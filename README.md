@@ -15,6 +15,20 @@
 [![Last commit](https://img.shields.io/github/last-commit/phmatray/Raga)](https://github.com/phmatray/Raga/commits)
 <!-- portfolio-badges:end -->
 
+<!-- portfolio-toc:start -->
+
+## Table of Contents
+
+- [✨ Features](#-features)
+- [📦 Installation](#-installation)
+- [🚀 Quick Start](#-quick-start)
+- [Tech Stack](#tech-stack)
+- [📄 License](#-license)
+- [Contributing](#contributing)
+
+<!-- portfolio-toc:end -->
+
+
 
 A gacha-style game built with Godot (C# bindings) and .NET gRPC backend services. Features server-authoritative game logic, character collection mechanics, and real-time client-server communication.
 
