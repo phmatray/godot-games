@@ -43,6 +43,16 @@ foreach (var room in dungeon.Rooms)
     Console.WriteLine($"Room at {room.X},{room.Y}");
 ```
 
+<!-- portfolio-techstack:start -->
+
+## Tech Stack
+
+- **.NET 10**
+- GdUnit4
+- GdUnit4.Api
+
+<!-- portfolio-techstack:end -->
+
 ## 📄 License
 MIT — see LICENSE
 
