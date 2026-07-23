@@ -2,6 +2,20 @@
 
 # Raga — Gacha game with Godot and gRPC
 
+<!-- portfolio-badges:start -->
+<!-- Identity -->
+[![phmatray - Raga](https://img.shields.io/static/v1?label=phmatray&message=Raga&color=blue&logo=github)](https://github.com/phmatray/Raga)
+![Top language](https://img.shields.io/github/languages/top/phmatray/Raga)
+[![Stars](https://img.shields.io/github/stars/phmatray/Raga?style=social)](https://github.com/phmatray/Raga/stargazers)
+[![Forks](https://img.shields.io/github/forks/phmatray/Raga?style=social)](https://github.com/phmatray/Raga/network/members)
+
+<!-- Activity -->
+[![Issues](https://img.shields.io/github/issues/phmatray/Raga)](https://github.com/phmatray/Raga/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/phmatray/Raga)](https://github.com/phmatray/Raga/pulls)
+[![Last commit](https://img.shields.io/github/last-commit/phmatray/Raga)](https://github.com/phmatray/Raga/commits)
+<!-- portfolio-badges:end -->
+
+
 A gacha-style game built with Godot (C# bindings) and .NET gRPC backend services. Features server-authoritative game logic, character collection mechanics, and real-time client-server communication.
 
 ## ✨ Features
