@@ -62,6 +62,22 @@ cd godot-games/lenia   # or raga / dragonfall / platformer
 Each folder was merged with **full git history preserved** (`git subtree`). The
 original repositories are archived and redirect here.
 
+<!-- portfolio-techstack:start -->
+
+## Tech Stack
+
+- **.NET 10 · .NET 8**
+- GdUnit4
+- GdUnit4.Api
+- ObservableCollections.R3
+- R3
+- Google.Protobuf
+- Grpc.Net.Client
+- Grpc.Tools
+- Bogus
+
+<!-- portfolio-techstack:end -->
+
 ## License
 
 MIT — see [`LICENSE`](LICENSE).
