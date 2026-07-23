@@ -2,6 +2,21 @@
 
 # Godot Games
 
+<!-- portfolio-badges:start -->
+<!-- Identity -->
+[![phmatray - godot-games](https://img.shields.io/static/v1?label=phmatray&message=godot-games&color=blue&logo=github)](https://github.com/phmatray/godot-games)
+![Top language](https://img.shields.io/github/languages/top/phmatray/godot-games)
+[![Stars](https://img.shields.io/github/stars/phmatray/godot-games?style=social)](https://github.com/phmatray/godot-games/stargazers)
+[![Forks](https://img.shields.io/github/forks/phmatray/godot-games?style=social)](https://github.com/phmatray/godot-games/network/members)
+[![License](https://img.shields.io/github/license/phmatray/godot-games)](https://github.com/phmatray/godot-games/blob/HEAD/LICENSE)
+
+<!-- Activity -->
+[![Issues](https://img.shields.io/github/issues/phmatray/godot-games)](https://github.com/phmatray/godot-games/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/phmatray/godot-games)](https://github.com/phmatray/godot-games/pulls)
+[![Last commit](https://img.shields.io/github/last-commit/phmatray/godot-games)](https://github.com/phmatray/godot-games/commits)
+<!-- portfolio-badges:end -->
+
+
 > A collection of **Godot 4 + .NET** games and engines — consolidated in one place
 > (full git history preserved).
 
