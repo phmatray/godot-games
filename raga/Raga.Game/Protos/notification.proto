@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option csharp_namespace = "Raga.Game";
+
+service NotificationService {
+  rpc SendNotification(SendNotificationRequest) returns (SendNotificationResponse);
+  rpc GetNotifications(GetNotificationsRequest) returns (GetNotificationsResponse);
+}
+
+message SendNotificationRequest {
+  string player_id = 1;
+  string message = 2;
+}
+
+message SendNotificationResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message GetNotificationsRequest {
+  string player_id = 1;
+}
+
+message GetNotificationsResponse {
+  repeated Notification notifications = 1;
+}
+
+message Notification {
+  string message = 1;
+  string timestamp = 2;
+}

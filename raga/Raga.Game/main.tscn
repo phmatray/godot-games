@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbn5pnylvgsn6"]
+
+[ext_resource type="PackedScene" uid="uid://dle1rpdyhry0o" path="res://Player.tscn" id="1_vghg8"]
+[ext_resource type="PackedScene" uid="uid://bkt5mial08qwk" path="res://HUD.tscn" id="2_gt3ff"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="HUD" parent="." instance=ExtResource("2_gt3ff")]
+
+[node name="Player" parent="." instance=ExtResource("1_vghg8")]
+position = Vector2(346, 186)
+Speed = null

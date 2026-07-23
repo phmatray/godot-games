@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "Raga.Game";
+
+service InfoService {
+  rpc GetInfo(GetInfoRequest) returns (GetInfoResponse);
+}
+
+message GetInfoRequest {
+  // Add any request-specific fields if needed
+}
+
+message GetInfoResponse {
+  string name = 1;
+  string version = 2;
+  string environment = 3;
+  string hostname = 4;
+  string os_version = 5;
+  int32 processor_count = 6;
+  string framework_description = 7;
+  int64 memory_usage = 8;
+  string start_time = 9;
+  string current_time = 10;
+  string machine_architecture = 11;
+  int32 active_threads = 12;
+}

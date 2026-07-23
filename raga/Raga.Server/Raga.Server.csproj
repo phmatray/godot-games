@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf Include="Protos\auth.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\chat.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\clans.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\gacha.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\info.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\leaderboard.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\matchmaking.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\notification.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\player.proto" GrpcServices="Server" />
+    <Protobuf Include="Protos\store.proto" GrpcServices="Server" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="35.6.5" />
+    <PackageReference Include="FluentValidation" Version="12.1.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.34.1" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.76.0" />
+    <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.76.0" />
+    <PackageReference Include="MediatR" Version="14.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="10.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.6" />
+    <PackageReference Include="R3" Version="1.3.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+    <PackageReference Include="Serilog.Formatting.Compact" Version="3.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Gacha\Queries\" />
+    <Folder Include="Features\Players\Commands\DeletePlayer\" />
+    <Folder Include="Features\Players\Commands\UpdatePlayer\" />
+    <Folder Include="Features\Players\Queries\ListPlayers\" />
+  </ItemGroup>
+
+</Project>

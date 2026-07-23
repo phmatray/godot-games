@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option csharp_namespace = "Raga.Server";
+
+service StoreService {
+  rpc PurchaseItem(PurchaseItemRequest) returns (PurchaseItemResponse);
+  rpc GetInventory(GetInventoryRequest) returns (GetInventoryResponse);
+}
+
+message PurchaseItemRequest {
+  string player_id = 1;
+  string item_id = 2;
+}
+
+message PurchaseItemResponse {
+  bool success = 1;
+  string message = 2;
+  int32 remaining_currency = 3;
+}
+
+message GetInventoryRequest {
+  string player_id = 1;
+}
+
+message GetInventoryResponse {
+  repeated StoreItem items = 1;
+}
+
+message StoreItem {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  int32 price = 4;
+}

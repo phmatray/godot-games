@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+option csharp_namespace = "Raga.Server";
+
+service LeaderboardService {
+  rpc GetGlobalLeaderboard(GetLeaderboardRequest) returns (GetLeaderboardResponse);
+  rpc GetClanLeaderboard(GetClanLeaderboardRequest) returns (GetLeaderboardResponse);
+}
+
+message GetLeaderboardRequest {
+  int32 page_number = 1;
+  int32 page_size = 2;
+}
+
+message GetClanLeaderboardRequest {
+  string clan_id = 1;
+  int32 page_number = 2;
+  int32 page_size = 3;
+}
+
+message GetLeaderboardResponse {
+  repeated LeaderboardEntry entries = 1;
+  int32 total_count = 2;
+}
+
+message LeaderboardEntry {
+  string player_id = 1;
+  string player_name = 2;
+  int32 score = 3;
+}

@@ -1,0 +1,65 @@
+syntax = "proto3";
+
+option csharp_namespace = "Raga.Server";
+
+import "Protos/gacha.proto";
+
+service PlayerService {
+  rpc GetPlayer(GetPlayerRequest) returns (GetPlayerResponse);
+  rpc UpdatePlayer(UpdatePlayerRequest) returns (UpdatePlayerResponse);
+  rpc DeletePlayer(DeletePlayerRequest) returns (DeletePlayerResponse);
+  rpc ListPlayers(ListPlayersRequest) returns (ListPlayersResponse);
+  rpc GetInventory(InventoryRequest) returns (InventoryResponse);
+}
+
+message GetPlayerRequest {
+  string player_id = 1;
+}
+
+message GetPlayerResponse {
+  PlayerModel player = 1;
+}
+
+message UpdatePlayerRequest {
+  PlayerModel player = 1;
+}
+
+message UpdatePlayerResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message DeletePlayerRequest {
+  string player_id = 1;
+}
+
+message DeletePlayerResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message ListPlayersRequest {
+  int32 page_number = 1;
+  int32 page_size = 2;
+}
+
+message ListPlayersResponse {
+  repeated PlayerModel players = 1;
+  int32 total_count = 2;
+}
+
+message InventoryRequest {
+  string player_id = 1;
+}
+
+message InventoryResponse {
+  repeated GachaItemModel items = 1;
+}
+
+message PlayerModel {
+  string player_id = 1;
+  int32 level = 2;
+  int32 total_pulls = 3;
+  int32 total_currency = 4;
+  repeated string achievements = 5;
+}

@@ -1,0 +1,79 @@
+syntax = "proto3";
+
+option csharp_namespace = "Raga.Server";
+
+import "Protos/player.proto";
+
+service ClanService {
+  rpc CreateClan(CreateClanRequest) returns (CreateClanResponse);
+  rpc GetClan(GetClanRequest) returns (GetClanResponse);
+  rpc JoinClan(JoinClanRequest) returns (JoinClanResponse);
+  rpc LeaveClan(LeaveClanRequest) returns (LeaveClanResponse);
+  rpc GetClanMembers(GetClanMembersRequest) returns (GetClanMembersResponse);
+  rpc GetClans(GetClansRequest) returns (GetClansResponse);
+}
+
+message CreateClanRequest {
+  string name = 1;
+  string description = 2;
+  string location = 3;
+}
+
+message CreateClanResponse {
+  bool success = 1;
+  string message = 2;
+  ClanModel clan = 3;
+}
+
+message GetClanRequest {
+  string clan_id = 1;
+}
+
+message GetClanResponse {
+  ClanModel clan = 1;
+}
+
+message JoinClanRequest {
+  string player_id = 1;
+  string clan_id = 2;
+}
+
+message JoinClanResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message LeaveClanRequest {
+  string player_id = 1;
+  string clan_id = 2;
+}
+
+message LeaveClanResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message GetClanMembersRequest {
+  string clan_id = 1;
+}
+
+message GetClanMembersResponse {
+  repeated PlayerModel members = 1;
+}
+
+message GetClansRequest {
+  string location = 1;
+}
+
+message GetClansResponse {
+  repeated ClanModel clans = 1;
+}
+
+message ClanModel {
+  string id = 1;
+  string name = 2;
+  string description = 3;
+  optional string location = 4;
+  int32 member_count = 5;
+  int32 score = 6;
+}

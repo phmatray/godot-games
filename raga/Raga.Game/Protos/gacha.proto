@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+option csharp_namespace = "Raga.Game";
+
+service GachaService {
+  rpc PullGacha(GachaPullRequest) returns (GachaPullResponse);
+  rpc TradeItems(TradeRequest) returns (TradeResponse);
+  rpc ClaimDailyReward(DailyRewardRequest) returns (DailyRewardResponse);
+}
+
+message GachaPullRequest {
+  string player_id = 1;
+}
+
+message GachaPullResponse {
+  GachaItemModel item = 1;
+  int32 remaining_currency = 2;
+}
+
+message TradeRequest {
+  string from_player_id = 1;
+  string to_player_id = 2;
+  string offered_item_id = 3;
+  string requested_item_id = 4;
+}
+
+message TradeResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+message DailyRewardRequest {
+  string player_id = 1;
+}
+
+message DailyRewardResponse {
+  bool success = 1;
+  string message = 2;
+  int32 reward_currency = 3;
+  GachaItemModel reward_item = 4;
+}
+
+message GachaItemModel {
+  string id = 1;
+  string name = 2;
+  string rarity = 3;
+  int32 power = 4;
+  int32 level = 5;
+}
