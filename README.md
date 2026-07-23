@@ -16,6 +16,19 @@
 [![Last commit](https://img.shields.io/github/last-commit/phmatray/godot-games)](https://github.com/phmatray/godot-games/commits)
 <!-- portfolio-badges:end -->
 
+<!-- portfolio-toc:start -->
+
+## Table of Contents
+
+- [Projects](#projects)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [History](#history)
+- [License](#license)
+
+<!-- portfolio-toc:end -->
+
+
 
 > A collection of **Godot 4 + .NET** games and engines — consolidated in one place
 > (full git history preserved).
