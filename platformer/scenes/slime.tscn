@@ -1,0 +1,68 @@
+[gd_scene load_steps=10 format=3 uid="uid://cnjtp6litqbx4"]
+
+[ext_resource type="Texture2D" uid="uid://chaj5s561tbsp" path="res://assets/sprites/slime_green.png" id="1_hiqbc"]
+[ext_resource type="Script" path="res://scripts/Slime.cs" id="1_poxrm"]
+[ext_resource type="PackedScene" uid="uid://dhfojac52l556" path="res://scenes/killzone.tscn" id="2_5nmhr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4rsci"]
+atlas = ExtResource("1_hiqbc")
+region = Rect2(0, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x381r"]
+atlas = ExtResource("1_hiqbc")
+region = Rect2(24, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m84yi"]
+atlas = ExtResource("1_hiqbc")
+region = Rect2(48, 24, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lvvfi"]
+atlas = ExtResource("1_hiqbc")
+region = Rect2(72, 24, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pus58"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4rsci")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x381r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m84yi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lvvfi")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3giv4"]
+size = Vector2(10, 13)
+
+[node name="Slime" type="Node2D"]
+script = ExtResource("1_poxrm")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -12)
+sprite_frames = SubResource("SpriteFrames_pus58")
+autoplay = "default"
+frame = 3
+frame_progress = 1.0
+
+[node name="Killzone" parent="." instance=ExtResource("2_5nmhr")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0, -6.5)
+shape = SubResource("RectangleShape2D_3giv4")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+position = Vector2(0, -6)
+target_position = Vector2(8, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+position = Vector2(0, -6)
+target_position = Vector2(-8, 0)
