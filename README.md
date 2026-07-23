@@ -43,6 +43,14 @@ The code uses .NET 8.0 and Godot 4.2.
 
 ---
 
+<!-- portfolio-techstack:start -->
+
+## Tech Stack
+
+- **.NET 8**
+
+<!-- portfolio-techstack:end -->
+
 <!-- portfolio-sections:start -->
 
 ## Contributing
