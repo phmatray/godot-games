@@ -2,6 +2,21 @@
 
 # Lenia - Continuous Cellular Automaton
 
+<!-- portfolio-badges:start -->
+<!-- Identity -->
+[![phmatray - lenia-godot](https://img.shields.io/static/v1?label=phmatray&message=lenia-godot&color=blue&logo=github)](https://github.com/phmatray/lenia-godot)
+![Top language](https://img.shields.io/github/languages/top/phmatray/lenia-godot)
+[![Stars](https://img.shields.io/github/stars/phmatray/lenia-godot?style=social)](https://github.com/phmatray/lenia-godot/stargazers)
+[![Forks](https://img.shields.io/github/forks/phmatray/lenia-godot?style=social)](https://github.com/phmatray/lenia-godot/network/members)
+[![License](https://img.shields.io/github/license/phmatray/lenia-godot)](https://github.com/phmatray/lenia-godot/blob/HEAD/LICENSE)
+
+<!-- Activity -->
+[![Issues](https://img.shields.io/github/issues/phmatray/lenia-godot)](https://github.com/phmatray/lenia-godot/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/phmatray/lenia-godot)](https://github.com/phmatray/lenia-godot/pulls)
+[![Last commit](https://img.shields.io/github/last-commit/phmatray/lenia-godot)](https://github.com/phmatray/lenia-godot/commits)
+<!-- portfolio-badges:end -->
+
+
 A beautiful implementation of Lenia, a continuous cellular automaton system, built with Godot 4.4 and C#. Experience the mesmerizing patterns of artificial life evolving in real-time.
 
 ![Lenia Screenshot](docs/main-ui.png)
