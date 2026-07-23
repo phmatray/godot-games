@@ -15,6 +15,18 @@
 [![Last commit](https://img.shields.io/github/last-commit/phmatray/Platformer2D_Brackeys)](https://github.com/phmatray/Platformer2D_Brackeys/commits)
 <!-- portfolio-badges:end -->
 
+<!-- portfolio-toc:start -->
+
+## Table of Contents
+
+- [VIDEO TIMESTAMPS](#video-timestamps)
+- [Tech Stack](#tech-stack)
+- [Contributing](#contributing)
+- [License](#license)
+
+<!-- portfolio-toc:end -->
+
+
 
 From the tutorial [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by [Brackeys](https://www.youtube.com/@Brackeys).
 
