@@ -2,6 +2,20 @@
 
 # Platformer 2D
 
+<!-- portfolio-badges:start -->
+<!-- Identity -->
+[![phmatray - Platformer2D_Brackeys](https://img.shields.io/static/v1?label=phmatray&message=Platformer2D_Brackeys&color=blue&logo=github)](https://github.com/phmatray/Platformer2D_Brackeys)
+![Top language](https://img.shields.io/github/languages/top/phmatray/Platformer2D_Brackeys)
+[![Stars](https://img.shields.io/github/stars/phmatray/Platformer2D_Brackeys?style=social)](https://github.com/phmatray/Platformer2D_Brackeys/stargazers)
+[![Forks](https://img.shields.io/github/forks/phmatray/Platformer2D_Brackeys?style=social)](https://github.com/phmatray/Platformer2D_Brackeys/network/members)
+
+<!-- Activity -->
+[![Issues](https://img.shields.io/github/issues/phmatray/Platformer2D_Brackeys)](https://github.com/phmatray/Platformer2D_Brackeys/issues)
+[![Pull requests](https://img.shields.io/github/issues-pr/phmatray/Platformer2D_Brackeys)](https://github.com/phmatray/Platformer2D_Brackeys/pulls)
+[![Last commit](https://img.shields.io/github/last-commit/phmatray/Platformer2D_Brackeys)](https://github.com/phmatray/Platformer2D_Brackeys/commits)
+<!-- portfolio-badges:end -->
+
+
 From the tutorial [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by [Brackeys](https://www.youtube.com/@Brackeys).
 
 The code uses .NET 8.0 and Godot 4.2.
