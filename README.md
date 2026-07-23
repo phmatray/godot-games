@@ -16,6 +16,26 @@
 [![Last commit](https://img.shields.io/github/last-commit/phmatray/lenia-godot)](https://github.com/phmatray/lenia-godot/commits)
 <!-- portfolio-badges:end -->
 
+<!-- portfolio-toc:start -->
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Technical Details](#technical-details)
+- [🗺️ Roadmap](#-roadmap)
+- [Contributing](#contributing)
+- [Algorithm Background](#algorithm-background)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Screenshots](#screenshots)
+- [Links](#links)
+
+<!-- portfolio-toc:end -->
+
+
 
 A beautiful implementation of Lenia, a continuous cellular automaton system, built with Godot 4.4 and C#. Experience the mesmerizing patterns of artificial life evolving in real-time.
 
