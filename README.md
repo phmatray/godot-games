@@ -63,6 +63,14 @@ The code uses .NET 8.0 and Godot 4.2.
 
 <!-- portfolio-techstack:end -->
 
+<!-- portfolio-roadmap:start -->
+
+## Roadmap
+
+Planned work and known limitations are tracked in the [open issues](https://github.com/phmatray/Platformer2D_Brackeys/issues). Contributions toward them are welcome.
+
+<!-- portfolio-roadmap:end -->
+
 <!-- portfolio-sections:start -->
 
 ## Contributing
