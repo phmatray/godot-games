@@ -134,6 +134,16 @@ Lenia/
 - **Scene composition** for UI flexibility
 - **Resource management** for optimal memory usage
 
+## 🗺️ Roadmap
+
+- [ ] Godot Web (HTML5) export for a no-install, browser-based demo
+- [ ] Pattern library import/export so custom configurations can be shared as files
+- [ ] Video/GIF export in addition to the existing screenshot capture
+- [ ] Automated tests for the simulation core (`LeniaSimulation`, `ColorMapper`)
+- [ ] A custom color palette editor for user-defined gradients beyond the built-in schemes
+
+See the [open issues](https://github.com/phmatray/lenia-godot/issues) for what's currently planned.
+
 ## Contributing
 
 We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
