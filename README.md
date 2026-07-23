@@ -1,3 +1,5 @@
+![godot-games banner](.github/banner.png)
+
 # Godot Games
 
 > A collection of **Godot 4 + .NET** games and engines — consolidated in one place
