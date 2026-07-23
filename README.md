@@ -26,6 +26,27 @@
 
 <!-- portfolio-toc:end -->
 
+<!-- portfolio-getstarted:start -->
+
+## Getting Started
+
+### Prerequisites
+
+- [.NET SDK](https://dotnet.microsoft.com/download)
+
+### Run
+
+```bash
+git clone https://github.com/phmatray/Platformer2D_Brackeys.git
+cd Platformer2D_Brackeys
+dotnet restore
+dotnet build
+dotnet run
+```
+
+<!-- portfolio-getstarted:end -->
+
+
 
 
 From the tutorial [How to make a Video Game - Godot Beginner Tutorial](https://www.youtube.com/watch?v=LOhfqjmasi0) by [Brackeys](https://www.youtube.com/@Brackeys).
