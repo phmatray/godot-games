@@ -1,3 +1,5 @@
+![Raga banner](.github/banner.png)
+
 # Raga — Gacha game with Godot and gRPC
 
 A gacha-style game built with Godot (C# bindings) and .NET gRPC backend services. Features server-authoritative game logic, character collection mechanics, and real-time client-server communication.
