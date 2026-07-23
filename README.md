@@ -42,6 +42,22 @@ dotnet run --project Raga.Server
 # In Godot: open Raga.Game project and press F5
 ```
 
+<!-- portfolio-techstack:start -->
+
+## Tech Stack
+
+- **.NET 10**
+- ObservableCollections.R3
+- R3
+- Google.Protobuf
+- Grpc.Net.Client
+- Grpc.Tools
+- Bogus
+- FluentValidation
+- FluentValidation.DependencyInjectionExtensions
+
+<!-- portfolio-techstack:end -->
+
 ## 📄 License
 MIT — see LICENSE
 
