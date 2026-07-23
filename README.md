@@ -1,3 +1,5 @@
+![dragonfall banner](.github/banner.png)
+
 # dragonfall — Procedural dungeon generation for Godot
 
 A procedural dungeon generation engine for Godot games, implementing BSP (Binary Space Partitioning) tree algorithms to create randomized dungeons with rooms, corridors, and themed environments.
