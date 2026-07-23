@@ -1,3 +1,5 @@
+![lenia-godot banner](.github/banner.png)
+
 # Lenia - Continuous Cellular Automaton
 
 A beautiful implementation of Lenia, a continuous cellular automaton system, built with Godot 4.4 and C#. Experience the mesmerizing patterns of artificial life evolving in real-time.
