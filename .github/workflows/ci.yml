@@ -1,0 +1,68 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: build (${{ matrix.name }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          # Godot.NET.Sdk projects. Verified locally (dotnet 10.0.301, no Godot editor
+          # installed) that `dotnet build` succeeds against the GodotSharp package
+          # restored from NuGet alone -- the editor is not required to compile the C#
+          # scripts. Note: Godot-generated solutions do NOT define a "Release" solution
+          # configuration, only Debug / ExportDebug / ExportRelease, so ExportRelease is
+          # used here (the "Release" equivalent for these projects).
+          - name: platformer
+            project: platformer/PlatformerBrackeys.sln
+            configuration: ExportRelease
+          - name: lenia
+            project: lenia/Lenia.csproj
+            configuration: ExportRelease
+          - name: raga-game
+            project: raga/Raga.Game/Raga.Game.sln
+            configuration: ExportRelease
+          # Plain ASP.NET Core / gRPC server, Microsoft.NET.Sdk.Web -- not a Godot
+          # project at all, standard Debug/Release configurations apply.
+          - name: raga-server
+            project: raga/Raga.Server/Raga.Server.sln
+            configuration: Release
+
+          # dragonfall/ is intentionally NOT included in this matrix.
+          #
+          # It fails `dotnet build` for two pre-existing reasons unrelated to needing
+          # the Godot editor (confirmed by building the .csproj directly, no engine
+          # involved either way):
+          #   1. Dragonfall.Tests.csproj references PackageReference "GdUnit4" 4.3.4,
+          #      which does not resolve on nuget.org (NU1101) -- the real package id is
+          #      "gdUnit4.api".
+          #   2. Dragonfall.csproj's default compile item glob pulls in
+          #      Dragonfall.Tests/**/*.cs (no <Compile Remove> exclusion for the nested
+          #      test project), so even building Dragonfall.csproj alone drags in
+          #      GdUnit4 test attributes it has no reference to, producing ~400 CS0246
+          #      errors.
+          # Both are dependency/project-file bugs in game code, out of scope for this
+          # CI-only change. See PR description for details.
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore
+        run: dotnet restore "${{ matrix.project }}"
+
+      - name: Build
+        run: dotnet build "${{ matrix.project }}" --no-restore -c "${{ matrix.configuration }}"
